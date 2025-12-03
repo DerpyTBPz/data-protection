@@ -37,7 +37,7 @@ int main()
     long long G_in = 654;
     long long H_in = 4547;
     long long Q_in = 11087;
-    // scanf("%lld%lld%lld", &G_in, &H_in, &Q_in);
+    scanf("%lld%lld%lld", &G_in, &H_in, &Q_in);
 
     unsigned long long G = (unsigned long long)G_in;
     unsigned long long H = (unsigned long long)H_in;
