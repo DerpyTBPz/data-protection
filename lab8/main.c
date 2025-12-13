@@ -211,13 +211,12 @@ int main()
     uint8_t iv[16]  = { 0xf0, 0xf1, 0xf2, 0xf3, 0xf4, 0xf5, 0xf6, 0xf7, 
                         0xf8, 0xf9, 0xfa, 0xfb, 0xfc, 0xfd, 0xfe, 0xff };
 
-    const char* message = "Hello, AES-CTR Mode! This text is longer than 16 bytes.";
+    const char* message = "oh god help this cursed soul throw it's path";
     size_t len = strlen(message);
 
     uint8_t encrypted[128];
     uint8_t decrypted[128];
 
-    printf("=== AES-128 CTR Mode Demo ===\n\n");
     print_char("Original", (uint8_t*)message, len);
 
     AES_CTR_xcrypt(key, iv, (uint8_t*)message, encrypted, len);
